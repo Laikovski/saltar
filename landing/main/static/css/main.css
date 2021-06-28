@@ -1,0 +1,435 @@
+header
+{
+	margin-bottom: 50px;
+}
+.adress-menu
+{
+	border-bottom: 1px solid #f2f2f2;
+	display: flex;
+	justify-content: space-around;
+	line-height: 42px;
+	margin-bottom: 20px;
+	width: 90%;
+}
+.fa-map-marker-alt,
+.fa-envelope,
+.fa-phone-alt,
+.fa-clock
+{
+	color: #4D63FF;
+	font-size: 16px;
+	margin-right: 10px;
+}
+.block-info
+{
+	background: rgba(34,35,35,0.54) url("../img/cropped.jpg") no-repeat;
+	background-size: cover;
+	height: 500px;
+	position: relative;
+	width: 100%;
+}
+.upper-form
+{
+	align-items: center;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+#alert_message
+{
+	color: white;
+	margin-top: 10px;
+}
+.text-info
+{
+	background-color: rgba(0, 0, 0, 0.54);
+	color: white;
+	left: 10%;
+	padding: 20px;
+	padding-top: 0px;
+	position: absolute;
+	top: 22%;
+	vertical-align: middle;
+}
+.text_info_block
+{
+	font-size: 30px;
+}
+.mb-3
+{
+	display: block;
+	margin-top: 10px;
+}
+.set-input
+{
+	border-radius: 5px;
+	padding: 5px;
+}
+input:focus
+{
+	outline: none;
+}
+.field-inputs
+{
+	width: 100%;
+}
+.form-label
+{
+	display: block;
+	padding-left: 12%;
+	text-align: left;
+	width: 100%;
+}
+.block-button
+{
+	display: block;
+	margin-top: 15px;
+	text-align: center;
+	width: 100%;
+}
+.upperButton
+{
+	background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color: #2dabf9;
+	border: 1px solid #0b0e07;
+	border-radius: 3px;
+	box-shadow: inset 0px -3px 7px 0px #29bbff;
+	color: #ffffff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Arial;
+	font-size: 15px;
+	padding: 9px 23px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #263666;
+}
+.upperButton:hover
+{
+	background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color: #0688fa;
+}
+.upperButton:active
+{
+	position: relative;
+	top: 1px;
+}
+.border
+{
+	border-right: 1px solid #f2f2f2;
+	padding-right: 40px;
+}
+.header-menu
+{
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	line-height: auto;
+	margin: 0 auto;
+	width: 90%;
+}
+.logo
+{
+	display: flex;
+}
+.logo img
+{
+	height: 50px;
+	width: 50px;
+}
+.logo-text
+{
+	margin-left: 10px;
+}
+.menu a
+{
+	color: black;
+	margin-right: 30px;
+	opacity: 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 2s linear;
+}
+.logo-text-1
+{
+	font-size: 20px;
+	font-weight: 700;
+}
+.logo-text-2
+{
+	color: #4D63FF;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.about-us
+{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	margin-top: 40px;
+	text-align: center;
+	width: 90%;
+}
+.about-us h2, 
+.servises h2, 
+.second-block-cars h2, 
+.servises h2,
+.first-contact h2
+{
+	font-size: 33px;
+	font-weight: 300;
+}
+.about-us h2::after, 
+.second-block-cars h2::after, 
+.servises h2::after,
+.first-contact h2::after
+{
+	background: #4d63ff;
+	content: "";
+	display: block;
+	height: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	width: 80px;
+}
+.advantages
+{
+	display: flex;
+	justify-content: space-around;
+	opacity: 0;
+	transition: 2s linear;
+}
+.first-a
+{
+	border: 1px solid rgb(214, 219, 224);
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+	width: 30%;
+}
+.servis-text
+{
+	max-width: 250px;
+}
+.first-a h3, .servis-text h3
+{
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+.first-a h3::after
+{
+	background: #4d63ff;
+	content: "";
+	display: block;
+	height: 1px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	width: 80px;
+}
+.hexagon
+{
+	align-items: center;
+	border: solid 1px #4d63ff;
+	border-left: solid 2px #4d63ff;
+	display: flex;
+	flex-direction: column;
+	height: 80px;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 20px;
+	position: relative;
+	width: 80px;
+}
+.first-a img
+{
+	width: 50px;
+}
+.first-a p
+{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.first-block-img
+{
+	background: rgba(34,35,35,0.54) url("../img/workshop.png") no-repeat;
+	background-size: cover;
+	height: 500px;
+	width: 50%;
+}
+.we-repair
+{
+	display: flex;
+	margin-top: 100px;
+	opacity: 0;
+	transition: 2s linear;
+}
+.second-block-cars
+{
+	align-items: center;
+	background-color: #f5f5f5;
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	width: 50%;
+}
+.columns
+{
+	align-items: center;
+	display: flex;
+	width: 100%;
+}
+.block-text
+{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 90%;
+}
+.columns
+{
+	display: flex;
+	justify-content: space-around;
+	text-align: left;
+}
+.first-colomn li, .second-colomn li, .third-colomn li
+{
+	list-style-type: none;
+}
+.first-colomn
+{
+	margin-left: -50px;
+}
+.first-colomn li::before, .second-colomn li::before, .third-colomn li::before
+{
+	color: #4d63ff;
+	content: "\f00c";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	margin-right: 5px;
+}
+.servises
+{
+	margin-top: 60px;
+	text-align: center;
+	width: 100%;
+}
+.servises h2
+{
+	margin-bottom: 40px;
+}
+.servis
+{
+	border: 1px solid rgb(214, 219, 224);
+	display: flex;
+	height: 200px;
+	margin-bottom: 2%;
+	text-align: center;
+	width: 40%;
+}
+.servis-block
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+.servis-text
+{
+	display: flex;
+	margin: 0 auto;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.servis-text h3
+{
+	font-weight: 600;
+}
+.img-block
+{
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+}
+.img-block img
+{
+	height: auto
+ object-fit: cover;
+	width: 100%;
+}
+.contact
+{
+	display: flex;
+	margin-top: 40px;
+	text-align: center;
+	width: 100%;
+}
+.first-contact
+{
+	background-color: #f5f5f5;
+	display: flex;
+	flex-direction: column;
+	height: 400px;
+	width: 50%;
+}
+.second-contact
+{
+	height: 400px;
+	width: 50%;
+}
+.first-contact h2
+{
+	padding-top: 30px;
+}
+.shema-adress
+{
+	margin: 0 auto;
+	text-align: left;
+	width: 70%;
+}
+.size
+{
+	font-size: 22px;
+	font-weight: 100;
+	margin-bottom: 5px;
+}
+.footer
+{
+	background-color: #4d63ff;
+	color: lightyellow;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+}
+.servis-text
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+.preloader
+{
+	align-items: center;
+	background-color: white;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	opacity: 1;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	transition: 2s linear;
+	width: 100%;
+	z-index: 99999999;
+}
+.preloader img
+{
+	animation: spin 5s linear 0s infinite;
+	height: 50px;
+	width: 50px;
+}
+
+
+

@@ -1,0 +1,96 @@
+@media screen and (max-width: 940px)
+{
+	.email
+	{
+		display: none;
+	}
+	.advantages
+	{
+		flex-direction: column;
+		margin: 0 auto;
+		width: 80%;
+	}
+	.first-a
+	{
+		align-items: center;
+		height: auto;
+		margin: 0 auto;
+		margin-bottom: 1em;
+		width: 90%;
+	}
+	.first-block-img
+	{
+		display: none;
+	}
+	.second-block-cars
+	{
+		width: 100%;
+	}
+	.servis
+	{
+		flex-direction: column;
+		height: 300px;
+		width: 70%;
+	}
+	.servis-text
+	{
+		max-width: 80%;
+	}
+}
+@media screen and (max-width: 740px)
+{
+	.border
+	{
+		border-right: 1px solid #fff;
+	}
+	.adress-menu
+	{
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+	}
+	.header-menu
+	{
+		flex-direction: column;
+	}
+	.menu
+	{
+		margin-top: 2em;
+	}
+	.about-us
+	{
+		width: 100%;
+	}
+	.text-about
+	{
+		margin: 0 auto;
+		margin-bottom: 1em;
+		width: 90%;
+	}
+	.contact
+	{
+		flex-direction: column;
+	}
+	.first-contact
+	{
+		width: 100%;
+	}
+	.second-contact
+	{
+		width: 100%;
+	}
+	.servis
+	{
+		flex-direction: column;
+		width: 70%;
+	}
+	.img-block
+	{
+		height: 100%;
+		width: 100%;
+	}
+	.servis-text h3
+	{
+		font-weight: 600;
+	}
+}

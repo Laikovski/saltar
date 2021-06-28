@@ -1,0 +1,164 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+<section>
+    <div class="block-info">
+        <div class="text-info"><span class="text_info_block">Запишитесь на Бесплатную<br> диагностику
+                автомобиля!</span>
+            <div>
+                <!--                form on main page-->
+                <form action="" method="post" class="upper-form" id="id_form">
+                    {% csrf_token %}
+                    <div class="field-inputs">
+                        <div class="mb-3">
+                            <label for="{{ form.title.id_for_lable }}" class="form-label">Имя</label>
+                            <div>{{ form.name }}</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="{{ form.title.id_for_lable }}" class="form-label">Телефон</label>
+                            <div>{{ form.phone }}</div>
+                        </div>
+                    </div>
+                    <div class="block-button">
+                        <button type="submit" class="upperButton">Отправить</button>
+                    </div>
+                    <div id="alert_message"></div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<span id="about"></span>
+<section>
+    <div class="about-us">
+        <h2>Почему выбирают нас?</h2>
+        <p class="text-about">
+            Мы - автосервис с многолетним опытом работ по ремонту и обслуживанию автомобилей всех марок. Широкий спектр услуг по техническому обслуживанию, профилактике неисправностей и ремонту автомобилей
+        </p>
+
+        <div class="advantages">
+
+            <div class="first-a">
+                <div class="hexagon"><img src="{% static '/img/clock.svg' %}"></div>
+                <h3><strong>Выполнение работ точно и в срок</strong></h3>
+
+
+                <p>
+
+                    Срок проведения ремонта автомобиля устанавливается в договоре между организацией и потребителем, где указывается точное количество дней.
+                </p>
+            </div>
+            <div class="first-a">
+                <div class="hexagon"><img src="{% static '/img/repair.svg' %}"></div>
+                <h3><strong>Нужные запчасти со своего склада</strong></h3>
+
+
+                <p>
+
+                    Склад запасных частей – неотъемлемая часть нашего автосервиса. И неважно это специализация узкого профиля или же ремонт автомобилей под ключ.
+                </p>
+            </div>
+            <div class="first-a">
+                <div class="hexagon"><img src="{% static '/img/car.svg' %}"></div>
+                <h3><strong>Удобный подъезд и парковка</strong></h3>
+
+
+                <p>
+
+                    Наш автосервис с охраняемой парковкой – это еще одно преимущество нашего сервиса. Закрытая территория с оборудованным удобным подъездом.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section>
+    <div class="we-repair">
+        <div class="first-block-img"></div>
+        <div class="second-block-cars">
+            <div class="block-text">
+                <h2>Мы обслуживаем</h2>
+                <p>Техническая оснащенность автосервиса и подготовка персонала позволяет выполнять весь спектр профилактических и ремонтных работ с автомобилями:</p>
+                <div class="columns">
+                    <div class="first-colomn">
+
+                        <ul>
+                            <li>Land Rover</li>
+                            <li>Lexus</li>
+                            <li>BMW</li>
+                            <li>Mercedes - Benz</li>
+                            <li>Audi</li>
+                            <li>Volkswagen</li>
+                            <li>Toyota</li>
+                            <li>Suzuki</li>
+                            <li>Citroen</li>
+                            <li>Daihatsu</li>
+                        </ul>
+
+
+                    </div>
+
+                    <div class="second-colomn">
+
+                        <ul>
+
+                            <li> Mazda</li>
+                            <li>Mitsubishi </li>
+                            <li>Nissan</li>
+                            <li>Volvo</li>
+                            <li>Renault</li>
+                            <li>Opel</li>
+                            <li>Peugeot</li>
+                            <li>Subaru</li>
+                            <li>Dodge</li>
+                            <li>Skoda</li>
+
+                        </ul>
+                    </div>
+                    <div class="third-colomn">
+
+                        <Ul>
+                            <li>Hyundai</li>
+                            <li>Kia</li>
+                            <li>Ford</li>
+                            <li>Chevrolet</li>
+                            <li>Honda</li>
+                            <li>Daewoo</li>
+                            <li>Lada</li>
+                            <li>Fiat</li>
+                            <li>Jeep</li>
+                            <li>Datsun</li>
+                        </Ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section>
+
+    <div class="servises" id="serv">
+        <h2>Основные услуги нашего автосервиса</h2>
+        <div class="servis-block">
+            {% for item in services %}
+
+            <div class="servis">
+
+                <div class="img-block"><img src={{item.image.url}}></div>
+                <div class="servis-text">
+                    <h3>{{ item.title }}</h3>
+                    {{ item.text }}
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}
