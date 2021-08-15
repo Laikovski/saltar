@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/media.css' %}">
+    <meta name="yandex-verification" content="ab900e3d157420fb" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <title>Автосервис советский район - шиномонтаж - ремонт автомобилей в Минске</title>
+    <meta name="description" content="Ремонт легковых и грузовых автомобилей в Минске в советском районе, шиномонтаж, заправка и ремонт кондиционера." />
+    <link rel="shortcut icon" type="image/x-icon" href="{% static '/img/index.ico' %}" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <!--        <div class="preloader">-->
+        <!--            <img src="{% static '/img/preloader.svg' %}" alt="">-->
+        <!--        </div>-->
+        <span id="top"></span>
+        <div class="adress-menu">
+            <div class="street border"><i class="fas fa-map-marker-alt"></i> г.Минск, ул. Олешева 14/1 </div>
+            <div class="phone-1 border"><i class="fas fa-phone-alt"></i>+375 (29) 3527040</div>
+            <div class="phone-1 border"><i class="fas fa-phone-alt"></i>+375 (29) 7527040</div>
+
+            <div class="email border"><i class="far fa-envelope"></i>saltarminsk@ya.ru</div>
+            <div class="time-work border"><i class="far fa-clock"></i>Пн.-Пт. 9.00 - 19.00</div>
+        </div>
+        <div class="header-menu">
+
+            <div class="logo">
+                <a href="{% url 'index_page' %}">
+                    <img src="{% static '/img/logo.svg' %}"></a>
+                <div class="logo-text">
+                    <div class="logo-text-1">Автосервис</div>
+                    <div class="logo-text-2">сальтар</div>
+                </div>
+            </div>
+            <div class="menu-profile">
+                <a href="#">Главная</a>
+                <a href="#">О компании</a>
+                <a href="#">Услуги</a>
+
+                <a href="{% url 'login' %}"><b>Войти</b></a>
+            </div>
+        </div>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    <section>
+        <div class="contact">
+
+
+            <div class="first-contact">
+                <h2>Наши контакты</h2>
+                <div class="shema-adress">
+                    <div class="street size"><i class="fas fa-map-marker-alt"></i> г.Минск, ул. Олешева 14/1 </div>
+                    <div class="phone-1 size"><i class="fas fa-phone-alt"></i>+375 (29) 3527040</div>
+                    <div class="phone-2 size"><i class="fas fa-phone-alt"></i>+375 (29) 7527040</div>
+                    <div class="email size"><i class="far fa-envelope"></i>saltarminsk@ya.ru</div>
+                    <div class="time-work size"><i class="far fa-clock"></i>Пн.-Пт. 9.00 - 19.00</div>
+                </div>
+            </div>
+            <div class="second-contact">
+
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aff5aaa1ba85f20ca5eacdfe6213c18011f914db3d9eda7ce82f99e594d9923db&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="footer" id="contactik">Copyright {{ year }}</div>
+    </section>
+
+</body>
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+
+</html>

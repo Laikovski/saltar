@@ -1,7 +1,7 @@
 from django.db import models
 
 class GetUserInfo(models.Model):
-     """ create user base"""
+     """ create user base for bot"""
      name = models.CharField(max_length=150)
      phone = models.CharField(max_length=150)
 
@@ -9,7 +9,7 @@ class GetUserInfo(models.Model):
           return self.name
 
 class Services(models.Model):
-     """ base with company advantages"""
+     """ table with company advantages"""
      title = models.CharField(max_length=150)
      text = models.TextField()
      image = models.ImageField(upload_to='photos/')

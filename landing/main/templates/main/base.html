@@ -5,9 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
-    <link rel="stylesheet" href="{% static 'css/media.css' %}">
+
+    <link type="text/css" rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/media.css' %}">
     <meta name="yandex-verification" content="ab900e3d157420fb" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
@@ -55,8 +56,10 @@
             <div class="time-work border"><i class="far fa-clock"></i>Пн.-Пт. 9.00 - 19.00</div>
         </div>
         <div class="header-menu">
+
             <div class="logo">
-                <img src="{% static '/img/logo.svg' %}">
+                <a href="{% url 'index_page' %}">
+                    <img src="{% static '/img/logo.svg' %}"></a>
                 <div class="logo-text">
                     <div class="logo-text-1">Автосервис</div>
                     <div class="logo-text-2">сальтар</div>
@@ -67,6 +70,7 @@
                 <a href="#about">О компании</a>
                 <a href="#serv">Услуги</a>
                 <a href="#contactik">Контакты</a>
+                <a href="{% url 'login' %}"><b>Войти</b></a>
             </div>
         </div>
     </header>
@@ -100,6 +104,6 @@
     </section>
 
 </body>
-<script src="{% static 'js/main.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
 
 </html>
