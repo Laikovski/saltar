@@ -1,0 +1,46 @@
+{% extends 'profiles/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="auth-wrapper">
+    <h3>Редактировать данные</h3>
+    <div class="auth-box">
+
+       <form class="upper-form" action="" method="POST">
+                    {% csrf_token %}
+
+                    <div class="field-inputs">
+                        <div class="mb">
+                            <label for="Имя" class="form-label auth-add">Имя</label>
+                            <input class="auth-field" type="text" name="name" value="{{ data.name }}">
+                        </div>
+
+                        <div class="mb">
+                            <label for="Телефон" class="form-label auth-add">Телефон</label>
+                            <input class="auth-field" type="text" name="phone" placeholder="insert name"
+                                   value="{{ data.phone }}">
+                        </div>
+
+                        <div class="mb">
+                            <label for="Модель авто" class="form-label auth-add">Модель авто</label>
+                            <input class="auth-field" type="text" name="car-model" value="{{ data.car_model }}">
+                        </div>
+                    </div>
+                        <div class="mb">
+                            <label for="Рег. номер" class="form-label auth-add">Рег. номер</label>
+                            <input class="auth-field" type="text" name="car-number" value="{{ data.car_number }}">
+                        </div>
+                    <div class="mb">
+                            <label for="VIN" class="form-label auth-add">VIN</label>
+                            <input class="auth-field" type="text" name="vin" value="{{ data.vin }}">
+                        </div>
+
+
+                    <div class="block-button">
+                        <button class="upperButton" type="submit">Сохранить</button>
+                    </div>
+                </form>
+    </div>
+</div>
+{% endblock %}

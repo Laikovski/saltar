@@ -43,13 +43,14 @@ header
 .text-info
 {
 	background-color: rgba(0, 0, 0, 0.54);
-	color: red;
+	color: white;
 	left: 10%;
 	padding: 20px;
 	padding-top: 20px;
 	position: absolute;
 	top: 22%;
 	vertical-align: middle;
+	border-radius: 3px;
 }
 .text_info_block
 {
@@ -89,35 +90,24 @@ input:focus
 }
 .upperButton
 {
-	background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
-	background-color: #2dabf9;
-	border: 1px solid #0b0e07;
-	border-radius: 3px;
-	box-shadow: inset 0px -3px 7px 0px #29bbff;
+	background-color: #03A9F4;
+	border-radius: 5px;
+    border: none;
 	color: #ffffff;
+	font-weight: bold;
 	cursor: pointer;
 	display: inline-block;
 	font-family: Arial;
 	font-size: 15px;
-	padding: 9px 23px;
+	padding: 11px 22px;
 	text-decoration: none;
-	text-shadow: 0px 1px 0px #263666;
 }
-.upperButton:hover
-{
-	background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
-	background-color: #0688fa;
+
+.upperButton:hover{
+    background-color: gray;
 }
-.upperButton:active
-{
-	position: relative;
-	top: 1px;
-}
-.border
-{
-	border-right: 1px solid #f2f2f2;
-	padding-right: 40px;
-}
+
+
 .header-menu
 {
 	align-items: center;
@@ -431,5 +421,93 @@ input:focus
 	width: 50px;
 }
 
+.auth-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
+.auth-box{
+    min-width: 400px;
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 3px;
+}
 
+.auth-field{
+    padding: 12px 20px;
+    width: 80%;
+}
+
+.auth-add{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.link-registration{
+    margin-top: 5px;
+}
+
+.link-registration a{
+    text-decoration: none;
+    color: blue;
+}
+
+.btn-enter{
+    background: #03A9F4;
+    color: #fff !important;
+    padding: 11px 22px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.cabinet{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.user-icon {
+    background: #03A9F4;
+    color: #fff !important;
+    padding: 4px 8px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.user-link{
+    text-decoration: none;
+}
+
+th {
+  font-size: 13px;
+  font-weight: normal;
+  background: #b9c9fe;
+  border-top: 4px solid #aabcfe;
+  border-bottom: 1px solid white;
+  color: #039;
+  padding: 8px;
+}
+td {
+  background: #e8edff;
+  border-bottom: 1px solid white;
+  color: #669;
+  border-top: 1px solid transparent;
+  padding: 8px;
+}
+tr:hover td {
+  background: #ccddff;
+}
+
+.btn-cabinet{
+    margin-top: 20px;
+}
+
+.add-field{
+    margin-top: 10px;
+}
+
+.add-field button{
+    margin-top: 10px;
+}

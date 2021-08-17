@@ -453,3 +453,61 @@ input:focus
     text-decoration: none;
     color: blue;
 }
+
+.btn-enter{
+    background: #03A9F4;
+    color: #fff !important;
+    padding: 11px 22px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.cabinet{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.user-icon {
+    background: #03A9F4;
+    color: #fff !important;
+    padding: 4px 8px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.user-link{
+    text-decoration: none;
+}
+
+th {
+  font-size: 13px;
+  font-weight: normal;
+  background: #b9c9fe;
+  border-top: 4px solid #aabcfe;
+  border-bottom: 1px solid white;
+  color: #039;
+  padding: 8px;
+}
+td {
+  background: #e8edff;
+  border-bottom: 1px solid white;
+  color: #669;
+  border-top: 1px solid transparent;
+  padding: 8px;
+}
+tr:hover td {
+  background: #ccddff;
+}
+
+.btn-cabinet{
+    margin-top: 20px;
+}
+
+.add-field{
+    margin-top: 10px;
+}
+
+.add-field button{
+    margin-top: 10px;
+}

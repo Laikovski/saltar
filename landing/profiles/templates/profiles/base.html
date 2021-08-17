@@ -45,11 +45,10 @@
                 </div>
             </div>
             <div class="menu-profile">
-                <a href="#">Главная</a>
-                <a href="#">О компании</a>
-                <a href="#">Услуги</a>
-
-                <a href="{% url 'login' %}"><b>Войти</b></a>
+                {% if request.user.is_authenticated %}
+                <p href="#">Добрый день, <a class="user-link" href="{% url 'cabinet' %}"> <span class="user-icon">
+                    {{ request.user.username }}</span> </a> | <a href="{% url 'logout' %}">Выйти</a></p>
+                    {% endif %}
             </div>
         </div>
     </header>

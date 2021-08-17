@@ -7,24 +7,28 @@
     <h3>Авторизация </h3>
     <div class="auth-box">
 
-       <form method="post" class="upper-form" id="id_form">
+       <form method="post" class="upper-form">
                     {% csrf_token %}
-                    {{ form.as_p }}
-<!--                    <div class="field-inputs">-->
-<!--                        <div class="mb">-->
-<!--                            <label for="Логин" class="form-label auth-add">Логин</label>-->
-<!--                            <input type="text" class="auth-field" placeholder="Введите логин" name="uname" required>-->
-<!--                        </div>-->
+                    <div class="field-inputs">
+                        <div class="mb">
+                            <label for="Логин" class="form-label auth-add">Логин</label>
+                            <input type="text" class="auth-field" placeholder="Введите логин" name="username" required>
+                        </div>
 
-<!--                        <div class="mb">-->
-<!--                            <label for="Пароль" class="form-label auth-add">Пароль</label>-->
-<!--                            <input type="text" class="auth-field" placeholder="Введите пароль" name="uname" required>-->
-<!--                        </div>-->
-<!--                    </div>-->
+                        <div class="mb">
+                            <label for="Пароль" class="form-label auth-add">Пароль</label>
+                            <input type="password" class="auth-field" placeholder="Введите пароль" name="password"
+                                   required>
+                        </div>
+                    </div>
+           {% for message in messages %}
+                    {{ message }}
+                    {% endfor %}
                     <div class="block-button">
                         <button type="submit" class="upperButton">Войти</button>
                     </div>
-                    <div class="link-registration"><a href="#">Зарегистрироваться?</a> </div>
+                    <div class="link-registration"><a href="{% url 'register' %}">Зарегистрироваться?</a>
+                    </div>
                 </form>
     </div>
 </div>

@@ -1,0 +1,70 @@
+{% extends 'profiles/base.html' %}
+
+{% block content %}
+
+
+<div class="cabinet wrapper">
+    <div class="cabinet-block"><h3>Информация владельца</h3>
+    <div class="user-info">
+        {% for item in profile %}
+        <table class="table-info">
+            <tr>
+                <td>Имя</td>
+                <td>{{ item.name }}</td>
+            </tr>
+            <tr>
+                <td>Телефон</td>
+                <td>{{ item.phone }}</td>
+            </tr>
+            <tr>
+                <td>Марка авто</td>
+                <td>{{ item.car_model }}</td>
+            </tr>
+            <tr>
+                <td>Рег. номер</td>
+                <td>{{ item.car_number }}</td>
+            </tr>
+            <tr>
+                <td>VIN</td>
+                <td>{{ item.vin }}</td>
+            </tr>
+        </table>
+
+{% endfor %}</div>
+        {% if request.user.is_authenticated %}
+        <div class="btn-cabinet">
+        <a class="btn-enter" href="{% url 'edit' %}">Редактировать</a>
+        </div>
+        {% endif %}
+    </div>
+    <div class="cabinet-block history-work"><h3>История ремонтов</h3>
+    <table class="table-info">
+        <tr>
+            <th> Тип выполненных работ</th>
+            <th> Дата </th>
+        </tr>
+        {% for item in work %}
+
+
+        <tr><td>{{ item.work_name }}</td>
+        <td>{{ item.date }}</td></tr>
+        {% endfor %}
+    </table>
+        <div class="add-field">
+            <form method="post" action="" class="upper-form">
+                    {% csrf_token %}
+                    <div class="field-inputs">
+                        <div class="mb">
+                         {{ form.work_name }}
+
+                            <button type="submit" class="upperButton">Добавить</button>
+                        </div>
+
+                    </div>
+
+                </form>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

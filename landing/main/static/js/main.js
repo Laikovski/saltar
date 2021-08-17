@@ -60,7 +60,7 @@ document.addEventListener('scroll', () => {
 
 let href = document.querySelectorAll('.menu a')
 let count = 0;
-let delay = 2000;
+let delay = 200;
 
 for (let i = 0; i < href.length; i++) {
     setTimeout(function time(delay) {

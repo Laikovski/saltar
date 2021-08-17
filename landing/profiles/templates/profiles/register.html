@@ -1,10 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'profiles/base.html' %}
+{% load static %}
 
-</body>
-</html>
+
+{% block content %}
+<div class="auth-wrapper">
+    <h3>Регистрация</h3>
+    <div class="auth-box">
+
+       <form class="upper-form" action="" method="POST">
+                    {% csrf_token %}
+
+                    <div class="field-inputs">
+                        <div class="mb">
+                            <label for="Логин" class="form-label auth-add">Логин</label>
+                            {{ form.username }}
+                        </div>
+
+                        <div class="mb">
+                            <label for="Email" class="form-label auth-add">Email</label>
+                            {{ form.email }}
+                        </div>
+
+                        <div class="mb">
+                            <label for="Пароль" class="form-label auth-add">Пароль</label>
+                            {{ form.password1 }}
+                        </div>
+                    </div>
+                        <div class="mb">
+                            <label for="Пароль" class="form-label auth-add">Подтвердить пароль</label>
+                            {{ form.password2 }}
+                        </div>
+
+
+                    <div class="block-button">
+                        <button class="upperButton" type="submit">Регистрация</button>
+                    </div>
+                    <div class="link-registration"><a href="{% url 'login' %}">Войти?</a> </div>
+                </form>
+    </div>
+</div>
+{% endblock %}
